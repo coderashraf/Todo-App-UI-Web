@@ -1,0 +1,337 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 600px;
+}
+.main {
+  width: 58.2%;
+  margin-top: 147px;
+  margin-left: 24.5%;
+}
+.top {
+  position: relative;
+}
+
+.heading-a h1 {
+  display: inline;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 64px;
+  margin-right: 5px;
+}
+.heading-a span {
+  font-size: 64px;
+  font-family: "Heebo", sans-serif;
+  color: slategray;
+}
+.addlist-link {
+  position: absolute;
+  top: 25px;
+  right: 50px;
+}
+
+.addlist-link a {
+  text-decoration: none;
+  color: rgb(227, 85, 34);
+  font-size: 40px;
+  display: flex;
+}
+.addlist-link i {
+  margin-top: 2px;
+}
+
+.addlist-link p {
+  font-family: "Heebo", sans-serif;
+  font-size: 31px;
+  color: slategrey;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+.cards {
+  margin-top: 30px;
+  clear: both;
+  display: flex;
+  column-gap: 67px;
+}
+.card {
+  border: 2px solid rgb(227, 147, 147);
+  height: 358px;
+  width: 230px;
+  border-radius: 8px;
+  box-shadow: 10px 10px 10px rgb(221, 216, 216);
+}
+.card .list-title {
+  font-family: "Heebo", sans-serif;
+  text-decoration: none;
+  font-size: 26px;
+  margin: 30px 0 10px 0;
+  font-weight: bold;
+  text-align: center;
+}
+.list-title a {
+  text-decoration: none;
+  color: rgb(224, 137, 137);
+}
+.card hr {
+  margin-left: 17%;
+  background: rgb(158, 171, 185);
+}
+.card .completed {
+  font-family: sans-serif;
+  color: red;
+  text-align: right;
+  margin: 40px 10px 10px 0px;
+  font-size: 25px;
+  position: relative;
+}
+.card .completed hr {
+  position: absolute;
+  top: 12px;
+  right: 8px;
+  height: 3px;
+  width: 180px;
+  background-color: red;
+  border: none;
+}
+
+.card .pending {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.card input {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  top: 3px;
+}
+.card label {
+  font-family: sans-serif;
+  color: black;
+  font-size: 23px;
+  margin-left: 5px;
+}
+
+/* CSS FOR THE ADD NEW LIST PAGE */
+
+.filtered {
+  filter: blur(7px);
+}
+.filtered div {
+  box-shadow: none;
+}
+
+.addlist-page {
+  position: absolute;
+  top: 0;
+  left: 3%;
+  height: 100%;
+  width: 94%;
+  padding: 0px 40px;
+  border-left: 1px solid slategray;
+  border-right: 1px solid slategray;
+}
+
+.addlist-page div {
+  font-family: "Heebo", sans-serif;
+  font-weight: bolder;
+  position: relative;
+  top: 37%;
+  left: 33%;
+  background-color: white;
+  color: rgb(241, 81, 81);
+  border: 2px solid rgb(227, 147, 147);
+  border-radius: 10px;
+  height: 220px;
+  width: 450px;
+  text-align: center;
+  font-size: 24px;
+  padding-top: 25px;
+  box-shadow: 10px 10px 10px rgb(221, 216, 216);
+}
+
+.addlist-page input[type="text"] {
+  height: 43px;
+  width: 320px;
+  margin-top: 15px;
+  border: 2px solid rgb(227, 147, 147);
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px rgb(195, 187, 187);
+}
+
+.addlist-page input[type="submit"] {
+  margin-top: 25px;
+  height: 43px;
+  width: 104px;
+  border-radius: 50px;
+  font-size: 25px;
+  color: white;
+  background: rgb(241, 96, 96);
+  border: none;
+  cursor: pointer;
+}
+
+/* List Info Page CSS starts here */
+
+.list-info {
+  font-family: sans-serif;
+  text-align: center;
+  height: 730px;
+}
+.list-heading {
+  font-size: 31px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.first-hr {
+  position: relative;
+  left: 24%;
+  top: 40px;
+  width: 180px;
+}
+.second-hr {
+  position: relative;
+  left: 65%;
+  top: 40px;
+  width: 180px;
+}
+.go-back {
+  margin-top: 50px;
+}
+.go-back i {
+  position: relative;
+  top: 4px;
+  font-size: 40px;
+  color: rgb(227, 85, 34);
+}
+.go-back p {
+  display: inline-block;
+  margin-left: 15px;
+  font-size: 32px;
+  color: grey;
+}
+.list-info-card {
+  height: 435px;
+  width: 445px;
+  border: 2px solid rgb(227, 147, 147);
+  border-radius: 8px;
+  box-shadow: 10px 10px 10px rgb(221, 216, 216);
+  margin: 70px auto;
+  text-align: left;
+  position: relative;
+}
+
+.list-info-card .list-title {
+  font-family: "Heebo", sans-serif;
+  text-decoration: none;
+  font-size: 30px;
+  margin: 50px 0 15px 0;
+  text-align: center;
+  font-weight: bolder;
+  color: rgb(229, 16, 16);
+}
+
+.list-title-hr {
+  margin-left: 30%;
+  background: black;
+  position: relative;
+  left: 2px;
+}
+.list-info-card .completed {
+  font-family: sans-serif;
+  font-weight: bold;
+  color: red;
+  text-align: center;
+  margin: 40px 0px 10px 25px;
+  font-size: 24px;
+  position: relative;
+}
+.list-info-card .completed hr {
+  position: absolute;
+  top: 13px;
+  right: 125px;
+  height: 3px;
+  width: 185px;
+  background-color: red;
+  border: none;
+}
+
+.list-info-card .pending {
+  text-align: center;
+  margin: 20px 40px 0 0;
+  font-weight: 500;
+}
+.list-info-card input {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  top: 3px;
+}
+.list-info-card label {
+  font-family: sans-serif;
+  color: black;
+  font-size: 24px;
+  margin-left: 5px;
+}
+.list-info-card a i {
+  position: absolute;
+  bottom: 20px;
+  right: 15px;
+  color: rgb(227, 85, 34);
+  font-size: 40px;
+}
+
+/* CSS for Addlist page(index4) */
+
+.additem-page {
+  position: absolute;
+  top: 0;
+  left: 3%;
+  height: 100%;
+  width: 94%;
+  padding: 0px 40px;
+  border-left: 1px solid slategray;
+  border-right: 1px solid slategray;
+}
+
+.additem-page div {
+  font-family: "Heebo", sans-serif;
+  font-weight: bold;
+  position: relative;
+  top: 40%;
+  left: 32%;
+  background-color: white;
+  color: rgb(241, 81, 81);
+  border: 2px solid rgb(227, 147, 147);
+  border-radius: 10px;
+  height: 220px;
+  width: 450px;
+  text-align: center;
+  font-size: 24px;
+  padding-top: 25px;
+  box-shadow: 10px 10px 10px rgb(221, 216, 216);
+}
+
+.additem-page input[type="text"] {
+  height: 43px;
+  width: 320px;
+  margin-top: 15px;
+  border: 2px solid rgb(227, 147, 147);
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px rgb(195, 187, 187);
+}
+
+.additem-page input[type="submit"] {
+  margin-top: 25px;
+  height: 43px;
+  width: 104px;
+  border-radius: 50px;
+  font-size: 25px;
+  color: white;
+  background: rgb(241, 96, 96);
+  border: none;
+  cursor: pointer;
+}

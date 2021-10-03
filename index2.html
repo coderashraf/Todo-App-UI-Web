@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App UI Web</title>
+  <link rel="stylesheet" href="./index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+</head>
+<body>
+  <div class="main filtered">
+    <div class="top">
+      <div class="heading-a"><h1>Tasks</h1><span>Lists</span></div>
+      <div class="addlist-link">
+        <a href="./index2.html">
+          <i class="fas fa-plus-circle"></i>
+          <p>Add List</p>
+        </a>  
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <div class="list-title"><a href="#" >Trip to Paris</a></div><hr>
+        <div class="completed"><p >Completed Task</p><hr></div>
+        <div class="pending">
+          <input type="checkbox" id="pending-task">
+          <label for="pending-task">Pending Task</label>
+        </div>
+      </div>
+        
+      <div class="card">
+        <div class="list-title"><a href="#" >My Todo List</a></div><hr>
+        <div class="completed"><p >Completed Task</p><hr></div>
+        <div class="pending">
+          <input type="checkbox" id="pending-task">
+          <label for="pending-task">Pending Task</label>
+        </div>
+      </div>
+      <div class="card">
+        <div class="list-title"><a href="#" >My Todo List</a></div><hr>
+        <div class="completed"><p >Completed Task</p><hr></div>
+        <div class="pending">
+          <input type="checkbox" id="pending-task">
+          <label for="pending-task">Pending Task</label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="addlist-page">
+    <div>
+      <label for="new-list">Add New List</label><br>
+      <input type="text" name="new-list" id="new-list"><br>
+      <a href="./index.html"><input type="submit" value="ADD"></a>
+    </div>
+  </div>
+</body>
+</html>
